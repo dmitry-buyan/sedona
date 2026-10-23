@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Буян](https://up.htmlacademy.ru/htmlcss-individual/3/user/2685735).
-* Наставник: `Неизвестно`.
+* [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
