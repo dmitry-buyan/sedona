@@ -9,7 +9,7 @@
     <div class="page-wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="#" alt="Логотип города Седона">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
         <nav class="navigation">
           <ul class="navigation__list">
@@ -20,17 +20,19 @@
               <a class="navigation__link" href="#">О Седоне</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="catalog.html" aria-current="page">Гостиницы</a>
+              <a class="navigation__link navigation__link--current" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation__user-list">
             <li class="navigation__user-item">
-              <a class="navigation__user-link" href="#"><span class="visually-hidden">Поиск</span></a>
+              <a class="navigation__user-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation__user-item">
-              <a class="navigation__user-link favourites" href="#">
+              <a class="navigation__user-link favorites" href="#">
                 <span class="visually-hidden">Количество гостиниц в избранном: </span>
-                <span class="favourites__count">12</span>
+                <span class="favorites__count">12</span>
               </a>
             </li>
             <li class="navigation__user-item">
@@ -45,7 +47,9 @@
           <h1 class="catalog-filter__title">Гостиницы Седоны</h1>
           <nav class="catalog-filter__breadcrumbs-nav" aria-label="Хлебные крошки">
             <ol class="catalog-filter__breadcrumbs">
-              <li class="catalog-filter__breadcrumb-item"><a class="catalog-filter__breadcrumb-link" href="index.html">Главная</a></li>
+              <li class="catalog-filter__breadcrumb-item">
+                <a class="catalog-filter__breadcrumb-link" href="index.html">Главная</a>
+              </li>
               <li class="catalog-filter__breadcrumb-item catalog-filter__breadcrumb-item--current" aria-current="page">Гостиницы</li>
             </ol>
           </nav>
@@ -55,13 +59,22 @@
               <legend class="catalog-filter__legend">Инфраструктура:</legend>
               <ul class="catalog-filter__options">
                 <li class="catalog-filter__option">
-                  <label class="catalog-filter__label"><input class="catalog-filter__input catalog-filter__input--checkbox" type="checkbox" name="feature" value="pool" checked>Бассейн</label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input catalog-filter__input--checkbox" type="checkbox" name="feature" value="pool" checked>
+                    Бассейн
+                  </label>
                 </li>
                 <li class="catalog-filter__option">
-                  <label class="catalog-filter__label"><input class="catalog-filter__input catalog-filter__input--checkbox" type="checkbox" name="feature" value="parking" checked>Парковка</label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input catalog-filter__input--checkbox" type="checkbox" name="feature" value="parking" checked>
+                    Парковка
+                  </label>
                 </li>
                 <li class="catalog-filter__option">
-                  <label class="catalog-filter__label"><input class="catalog-filter__input catalog-filter__input--checkbox" type="checkbox" name="feature" value="wifi">Wi-Fi</label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input catalog-filter__input--checkbox" type="checkbox" name="feature" value="wifi">
+                    Wi-Fi
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -70,25 +83,46 @@
               <legend class="catalog-filter__legend">Тип жилья:</legend>
               <ul class="catalog-filter__options">
                 <li class="catalog-filter__option">
-                  <label class="catalog-filter__label"><input class="catalog-filter__input catalog-filter__input--radio" type="radio" name="type" value="hotel" checked>Гостиница</label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input catalog-filter__input--radio" type="radio" name="type" value="hotel" checked>
+                    Гостиница
+                  </label>
                 </li>
                 <li class="catalog-filter__option">
-                  <label class="catalog-filter__label"><input class="catalog-filter__input catalog-filter__input--radio" type="radio" name="type" value="motel">Мотель</label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input catalog-filter__input--radio" type="radio" name="type" value="motel">
+                    Мотель
+                  </label>
                 </li>
                 <li class="catalog-filter__option">
-                  <label class="catalog-filter__label"><input class="catalog-filter__input catalog-filter__input--radio" type="radio" name="type" value="apartments">Апартаменты</label>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input catalog-filter__input--radio" type="radio" name="type" value="apartments">
+                    Апартаменты
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="catalog-filter__group catalog-filter__group--price">
               <legend class="catalog-filter__legend">Стоимость, ₽:</legend>
-              <label class="catalog-filter__label">От
+              <label class="catalog-filter__label">от
                 <input class="catalog-filter__input catalog-filter__input--price" type="number" name="price-min" min="0" value="0">
               </label>
-              <label class="catalog-filter__label">До
+              <label class="catalog-filter__label">до
                 <input class="catalog-filter__input catalog-filter__input--price" type="number" name="price-max" min="0" value="9000">
               </label>
+              <div class="catalog-filter__range-slider range-slider">
+                <div class="range-slider__track">
+                  <div class="range-slider__progress">
+                    <button class="range-slider__control range-slider__control--min" type="button">
+                      <span class="visually-hidden">Изменить минимальную стоимость</span>
+                    </button>
+                    <button class="range-slider__control range-slider__control--max" type="button">
+                      <span class="visually-hidden">Изменить максимальную стоимость</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
 
             <button class="catalog-filter__button catalog-filter__button--apply" type="submit">Применить</button>
@@ -121,7 +155,7 @@
             <li class="catalog-results__item">
               <article class="hotel-card">
                 <a class="hotel-card__link" href="#">
-                  <img class="hotel-card__image" src="#" alt="Вид на гостиницу Amara Resort &amp; Spa">
+                  <img class="hotel-card__image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Вид на гостиницу Amara Resort &amp; Spa">
                   <h3 class="hotel-card__title">Amara Resort &amp; Spa</h3>
                 </a>
                 <p class="hotel-card__type">Гостиница</p>
@@ -135,7 +169,7 @@
             <li class="catalog-results__item">
               <article class="hotel-card">
                 <a class="hotel-card__link" href="#">
-                  <img class="hotel-card__image" src="#" alt="Вид на гостиницу Villas at Poco Diablo">
+                  <img class="hotel-card__image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Вид на гостиницу Villas at Poco Diablo">
                   <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
                 </a>
                 <p class="hotel-card__type">Гостиница</p>
@@ -149,7 +183,7 @@
             <li class="catalog-results__item">
               <article class="hotel-card">
                 <a class="hotel-card__link" href="#">
-                  <img class="hotel-card__image" src="#" alt="Вид на гостиницу Desert Quail Inn">
+                  <img class="hotel-card__image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Вид на гостиницу Desert Quail Inn">
                   <h3 class="hotel-card__title">Desert Quail Inn</h3>
                 </a>
                 <p class="hotel-card__type">Гостиница</p>
@@ -163,7 +197,7 @@
             <li class="catalog-results__item">
               <article class="hotel-card">
                 <a class="hotel-card__link" href="#">
-                  <img class="hotel-card__image" src="#" alt="Вид на гостиницу GreenTree Inn">
+                  <img class="hotel-card__image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Вид на гостиницу GreenTree Inn">
                   <h3 class="hotel-card__title">GreenTree Inn</h3>
                 </a>
                 <p class="hotel-card__type">Гостиница</p>
@@ -178,12 +212,24 @@
 
           <nav class="catalog-results__pagination pagination" aria-label="Пагинация">
             <ul class="pagination__list">
-              <li class="pagination__item pagination__item--current"><a class="pagination__link" href="#" aria-current="page">1</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-              <li class="pagination__item"><span class="pagination__ellipsis">…</span></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+              <li class="pagination__item pagination__item--current">
+                <a class="pagination__link" aria-current="page">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__ellipsis">…</span>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">10</a>
+              </li>
             </ul>
           </nav>
         </section>
@@ -200,21 +246,26 @@
       </main>
 
       <footer class="page-footer">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
           </li>
         </ul>
         <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTML Academy</span>
-          <img src="#" alt="Логотип HTML Academy">
         </a>
       </footer>
     </div>

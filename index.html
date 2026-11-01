@@ -9,7 +9,7 @@
     <div class="page-wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="#" alt="Логотип города Седона">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
         <nav class="navigation" aria-label="Главная навигация">
           <ul class="navigation__list">
@@ -25,10 +25,15 @@
           </ul>
           <ul class="navigation__user-list">
             <li class="navigation__user-item">
-              <a class="navigation__user-link" href="#"><span class="visually-hidden">Поиск</span></a>
+              <a class="navigation__user-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation__user-item">
-              <a class="navigation__user-link" href="#"><span class="visually-hidden">Избранное: 12 гостиниц</span></a>
+              <a class="navigation__user-link favorites" href="#">
+                <span class="visually-hidden">Гостиниц в избранном:</span>
+                <span class="favorites__count">12</span>
+              </a>
             </li>
             <li class="navigation__user-item">
               <a class="navigation__user-link button" href="catalog.html">Хочу сюда!</a>
@@ -40,7 +45,7 @@
       <main class="main-container">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-          <img class="hero__image" src="#" width="458" height="352" alt="Добро пожаловать в Седону">
+          <img class="hero__image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
 
         <section class="advantages">
@@ -55,7 +60,7 @@
                 <h3 class="advantages__subtitle">Настоящий городок</h3>
                 <p class="advantages__description">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages__image" src="#" width="800" height="385" alt="Улица Седоны с магазином и американским флагом">
+              <img class="advantages__image" src="images/advantage-1.jpg" width="800" height="385" alt="Улица Седоны с магазином и американским флагом">
             </li>
             <li class="advantages__item">
               <h3 class="advantages__subtitle">Небольшая площадь</h3>
@@ -70,11 +75,11 @@
               <p class="advantages__description">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
             </li>
             <li class="advantages__item advantages__item--accent">
+              <img class="advantages__image" src="images/advantage-2.jpg" width="800" height="385" alt="Мост Дьявола в Седоне">
               <div class="advantages__item-content">
                 <h3 class="advantages__subtitle">Там есть мост дьявола</h3>
                 <p class="advantages__description">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется</p>
               </div>
-              <img class="advantages__image" src="#" width="800" height="385" alt="Мост Дьявола в Седоне">
             </li>
           </ul>
         </section>
@@ -104,7 +109,7 @@
         <section class="hotel-search">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
           <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="hotel-search__button button" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <button class="hotel-search__button button" type="button">Поиск гостиницы в Седоне</button>
         </section>
 
         <section class="newsletter newsletter--accent">
@@ -121,19 +126,24 @@
       <footer class="page-footer">
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
           </li>
         </ul>
         <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTML Academy</span>
-          <img src="#" alt="Логотип HTML Academy">
         </a>
       </footer>
     </div>
