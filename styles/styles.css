@@ -331,7 +331,6 @@ body {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
   background-color: #f2f2f2;
   border: none;
@@ -459,7 +458,6 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
   background-color: #f2f2f2;
   border: none;
 }
@@ -497,6 +495,8 @@ body {
 
 .catalog-results__sort {
   font-family: inherit;
+  font-size: 18px;
+  color: #333333;
 }
 
 .catalog-results__view {}
