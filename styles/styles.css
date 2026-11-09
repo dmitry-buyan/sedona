@@ -42,10 +42,10 @@ body {
 
 .button {
   padding: 0;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  font-family: inherit;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -456,6 +456,7 @@ body {
 .catalog-filter__input {
   margin: 0;
   padding: 0;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -494,7 +495,9 @@ body {
   margin: 0;
 }
 
-.catalog-results__sort {}
+.catalog-results__sort {
+  font-family: inherit;
+}
 
 .catalog-results__view {}
 
