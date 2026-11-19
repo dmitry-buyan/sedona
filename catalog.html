@@ -49,7 +49,7 @@
           <nav class="catalog-filter__breadcrumbs-nav" aria-label="Хлебные крошки">
             <ol class="catalog-filter__breadcrumbs">
               <li class="catalog-filter__breadcrumb-item">
-                <a class="catalog-filter__breadcrumb-link" href="index.html">
+                <a class="catalog-filter__breadcrumb-link catalog-filter__breadcrumb-link--home" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -108,50 +108,62 @@
 
             <fieldset class="catalog-filter__group catalog-filter__group--price">
               <legend class="catalog-filter__legend">Стоимость, ₽:</legend>
-              <label class="catalog-filter__label">от
-                <input class="catalog-filter__input catalog-filter__input--price" type="number" name="price-min" min="0" value="0">
-              </label>
-              <label class="catalog-filter__label">до
-                <input class="catalog-filter__input catalog-filter__input--price" type="number" name="price-max" min="0" value="9000">
-              </label>
-              <div class="catalog-filter__range-slider range-slider">
-                <div class="range-slider__track">
-                  <div class="range-slider__progress">
-                    <button class="range-slider__control range-slider__control--min" type="button">
-                      <span class="visually-hidden">Изменить минимальную стоимость</span>
-                    </button>
-                    <button class="range-slider__control range-slider__control--max" type="button">
-                      <span class="visually-hidden">Изменить максимальную стоимость</span>
-                    </button>
+              <div class="catalog-filter__price">
+                <div class="catalog-filter__price-controls">
+                  <label class="catalog-filter__price-control">
+                    <span class="visually-hidden">Минимальная стоимость</span>
+                    <input class="catalog-filter__input catalog-filter__input--price" type="number" name="price-min" min="0" value="0">
+                    <span class="catalog-filter__price-text">от</span>
+                  </label>
+                  <label class="catalog-filter__price-control">
+                    <span class="visually-hidden">Максимальная стоимость</span>
+                    <input class="catalog-filter__input catalog-filter__input--price" type="number" name="price-max" min="0" value="9000">
+                    <span class="catalog-filter__price-text">до</span>
+                  </label>
+                </div>
+                <div class="catalog-filter__range-slider range-slider">
+                  <div class="range-slider__track">
+                    <div class="range-slider__progress">
+                      <button class="range-slider__control range-slider__control--min" type="button">
+                        <span class="visually-hidden">Изменить минимальную стоимость</span>
+                      </button>
+                      <button class="range-slider__control range-slider__control--max" type="button">
+                        <span class="visually-hidden">Изменить максимальную стоимость</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </fieldset>
 
-            <button class="catalog-filter__button button button--secondary" type="submit">Применить</button>
-            <button class="catalog-filter__button button button--reset" type="reset">Сбросить</button>
+            <div class="catalog-filter__buttons">
+              <button class="catalog-filter__button button button--secondary" type="submit">Применить</button>
+              <button class="catalog-filter__button button button--reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
 
         <section class="catalog-results">
-          <h2 class="catalog-results__title">Найдено гостиниц: 38</h2>
+          <div class="catalog-results__header">
+            <h2 class="catalog-results__title">Найдено гостиниц: 38</h2>
 
-          <select class="catalog-results__sort" name="sort" aria-label="Сортировка">
-            <option value="price-asc" selected>Сначала дешёвые</option>
-            <option value="price-desc">Сначала дорогие</option>
-            <option value="rating-desc">Сначала популярные</option>
-          </select>
+            <select class="catalog-results__sort" name="sort" aria-label="Сортировка">
+              <option value="price-asc" selected>Сначала дешёвые</option>
+              <option value="price-desc">Сначала дорогие</option>
+              <option value="rating-desc">Сначала популярные</option>
+            </select>
 
-          <div class="catalog-results__view view">
-            <a class="view__button view__button--active view__button--tile" href="catalog.html?view=tile">
-              <span class="visually-hidden">Показать плиткой</span>
-            </a>
-            <a class="view__button view__button--card" href="catalog.html?view=card">
-              <span class="visually-hidden">Показать карточками</span>
-            </a>
-            <a class="view__button view__button--list" href="catalog.html?view=list">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
+            <div class="catalog-results__view view">
+              <a class="view__button view__button--active view__button--tile" href="catalog.html?view=tile">
+                <span class="visually-hidden">Показать плиткой</span>
+              </a>
+              <a class="view__button view__button--card" href="catalog.html?view=card">
+                <span class="visually-hidden">Показать карточками</span>
+              </a>
+              <a class="view__button view__button--list" href="catalog.html?view=list">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </div>
           </div>
 
           <ul class="catalog-results__list">
